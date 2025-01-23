@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styes.css">
+    <script src="script/script.js" defer></script>
+    <link rel="icon" href="img/logo.png">
+    <title>Correios - Rastreamento</title>
+</head>
+<body>
+    <header>
+        <img src="img/correios.png" alt="Logo dos Correios" class="logo">
+        <h1>Correios</h1>
+    </header>
+    <main>
+        <section class="tracking">
+            <h2>Rastreamento</h2>
+            <form onsubmit="trackObject(event)">
+                <label for="trackingCode">Deseja acompanhar seu objeto? Digite seu CPF/CNPJ ou código de rastreamento.</label>
+                <input type="text" id="trackingCode" name="trackingCode" placeholder="ex.: AA123456788R" maxlength="20">
+                <div class="captcha">
+                    <img src="img/captcha.png" alt="CAPTCHA" width="130px" height="70px">
+                    <input type="text" id="captcha" name="captcha" placeholder="Digite o texto contido na imagem">
+                </div>
+                <button type="submit">Consultar</button>
+            </form>
+            <div id="trackingResult" style="display:none;"></div>
+        </section>
+        <section class="promo">
+            <img src="img/propaganda.png" alt="">
+        </section>
+    </main>
+</body>
+</html>
